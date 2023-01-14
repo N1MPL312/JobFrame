@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Firmbee.com - Free Project Management Platform for remote teams"> 
+    <meta name="author" content="Firmbee.com - Free Project Management Platform for remote teams"> 
+    <title>JobFrame</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0e035b9984.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0e035b9984.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+      <nav class="navbar navbar-expand-xl fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img claass="w-100" src="img/icon/logotip.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-card-item">
+                <a class="nav-link  active" href="index.html">Početna</a>
+              </li>
+              <li class="nav-card-item">
+                <a class="nav-link" href="aboutus.html">O nama</a>
+              </li>
+              <li class="nav-card-item">
+                <a class="nav-link" href="contact.html">Kontakt</a>
+              </li>         
+            </ul>
+            <ul class="right navbar-nav ms-auto">
+              <li class="nav-card-item-right">
+                <a class="nav-link" href="#">Prijava</a>
+              </li>
+              <li class="nav-card-item-right create-account">
+                <a class="nav-link" href="#">Registracija</a>
+              </li>       
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <!-- Intro -->
+        <div class="intro">
+          <div class="container">
+            <div class="intro-text">
+              <h1>Tražiš posao?<br><span class="green">Mi ćemo ti pomoći</span></h1>
+              <div class="check-out">
+                <p>Pretraga</p>
+                <div class="form">
+                  <div class="job-search">
+                    <img style="width: 20px; margin-right: 30px;" src="img/icon/search-icon.svg" alt="">
+                    <input type="text" placeholder="Pretraži...">
+                  </div>
+				  LOKACIJE:
+                  <select class="drop-select k" name="kanton" id="kanton">
+<option value="">Odaberite lokaciju</option>
+							<option value="9">&nbsp;Sarajevo</option>
+							<option value="1">&nbsp;Unsko-sanski</option>
+							<option value="2">&nbsp;Posavski</option>
+							<option value="3">&nbsp;Tuzlanski</option>
+							<option value="4">&nbsp;Zeničko-dobojski</option>
+							<option value="5">&nbsp;Bosansko-podrinjski</option>
+							<option value="6">&nbsp;Srednjobosanski</option>
+							<option value="7">&nbsp;Hercegovačko-neretvanski</option>
+							<option value="8">&nbsp;Zapadno-hercegovački</option>
+							<option value="10">&nbsp;Livanjski</option>
+							<option value="14">&nbsp;Banjalučka</option>
+							<option value="15">&nbsp;Dobojsko-Bijeljinska</option>
+							<option value="16">&nbsp;Sarajevsko-Zvornička</option>
+							<option value="17">&nbsp;Trebinjsko-Fočanska</option>
+							<option value="12">Distrikt Brčko</option>
+                    </select>
+                    <input class="search main-btn" type="submit" value="Search">
+                  </div>
+                </div>
+                <div class="follow">
+                  <span>Prati nas i na:</span>
+                  <a href="https://instagram.com/job_frame?igshid=YmMyMTA2M2Y="><img src="img/icon/instagram.png" alt=""></a>
+                  <a href=""><img src="img/icon/tiktok.png" alt=""></a>
+                  <a href=""><img src="img/icon/linkedin-icon.svg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="intro-img">
+              <img src="img/intro.png" alt="">
+            </div>
+          </div>
+        </div>
+         <!--Search by category-->
+        <div class="container">
+        <div class="search-by">
+          <h1>Pretaživanje po <span class="green">kategorijama</span></h1>
+            <!--Start carousel-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+               <div class="carousel-inner text-center">
+                  <div class="carousel-item active">
+                    <div class="card-item" onclick="window.open('turizam.html')">
+                      <div class="photo">
+                        <img class="main-state" src="img/icon/location.png" alt="">
+                        <img class="hover" src="img/icon/location-hover.png" alt="">
+                      </div>
+                      <p>Turizam i<br>
+                        ugostiteljstvo</p>
+                    </div> 
+                    <div class="card-item" onclick="window.open('teh.html')">
+                      <div class="photo">
+                        <img class="main-state" src="img/icon/tehnika.png" alt="">
+                        <img class="hover" src="img/icon/tehnika-hover.png" alt="">
+                      </div>
+                      <p>Tehničke<br>
+                        usluge</p>
+                    </div>
+                    <div class="card-item" onclick="window.open('EiR.html')">
+                      <div class="photo">
+                        <img class="main-state" src="img/icon/pm.svg" alt="">
+                        <img class="hover" src="img/icon/pm-hover.svg" alt="">
+                      </div>
+                      <p>Elektrotehnika<br>
+                        i računarstvo</p>
+                    </div>
+                    <div class="card-item" onclick="window.open('MiP.html')">
+                      <div class="photo">
+                        <img class="main-state"src="img/icon/marketing.png" alt="">
+                        <img class="hover" src="img/icon/marketing-hover.png" alt="">
+                      </div>
+                      <p>Marketing</p>
+					    i PR</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card-item" onclick="window.open('Maš.html')">
+                      <div class="photo">
+                        <img class="main-state" src="img/icon/masina.png" alt="">
+                        <img class="hover" src="img/icon/masina-hover.png" alt="">
+                      </div>
+                      <p>Mašinstvo<br>
+                    </div> 
+                    <div class="card-item" onclick="window.open('Med.html')">
+                      <div class="photo">
+                        <img class="main-state" src="img/icon/medicina.png" alt="">
+                        <img class="hover" src="img/icon/medicina-hover.png" alt="">
+                      </div>
+                      <p>Medicina<br>
+                        </p>
+                    </div>
+                    <div class="card-item" onclick="window.open('IT.html')">
+                      <div class="photo">
+                        <img class="main-state"src="img/icon/IT.png" alt="">
+                        <img class="hover" src="img/icon/IT-hover.png" alt="">
+                      </div>
+                      <p>IT<br>
+                        </p>
+                    </div>
+                    <div class="card-item" onclick="window.open('Osta.html')">
+                      <div class="photo">
+                        <img class="main-state"src="img/icon/other.png" alt="">
+                        <img class="hover" src="img/icon/other-hover.png" alt="">
+                      </div>
+                      <p>Ostalo<br>
+                        </p>
+                    </div>		
+                  </div>
+               </div>
+               <div class="carousel-nav">
+                <a class="nav-item" role="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"><img src="img/icon/prew-arrow.svg" alt=""></a>
+                <a class="nav-item" role="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"><img src="img/icon/next-arrow.svg" alt=""></a>
+               </div>
+            </div>
+        </div>
+         <!--job offers-->
+          <div class="job-offers">
+            <h1>Poslovne <span class="green">ponude</span></h1>
+            <a href="">Sve <img style="width: 20px; margin-left: 20px;" src="/img/icon/arrow-right-icon.svg" alt=""></a>
+            <div class="row pt-5">
+              <div class="image col-md-4">
+                <img src="img/job-offers.png" alt="">
+              </div>
+              <div class="col-md-4">
+                <div class="offert-wrapper">
+                  <div class="offert">
+                    <div>
+                      <div class="offert-description">
+                        <div class="company-logo">
+                          <img src="ovdje logo firme" alt="">
+                        </div>
+                        <div class="description">
+                          <p class="company-name">Mjesto slobodno</p>
+                          <p class="description">Ovdje može biti baš vaša pslovna ponuda</p>
+                        </div>
+                      </div>
+                      <div class="offert-meta">
+                        <p class="location">Lokacija: <span class="city">...</span></p>
+                        <p class="offert-counter">Mjesta: <span class="green"><strong>broj mjesta</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="Više(trenutno opis).html" class="main-btn">Više</a>
+                </div>
+                <div class="offert-wrapper">
+                  <div class="offert">
+                    <div>
+                      <div class="offert-description">
+                        <div class="company-logo">
+                          <img src="ovdje logo firme" alt="">
+                        </div>
+                        <div class="description">
+                          <p class="company-name">Mjesto slobodno</p>
+                          <p class="description">Ovdje može biti baš vaša pslovna ponuda</p>
+                        </div>
+                      </div>
+                      <div class="offert-meta">
+                        <p class="location">Lokacija: <span class="city"></span></p>
+                        <p class="offert-counter">Mjesta: <span class="green"><strong>broj mjesta</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="Više(trenutno opis).html" class="main-btn">Više</a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="offert-wrapper">
+                  <div class="offert">
+                    <div>
+                      <div class="offert-description">
+                        <div class="company-logo">
+                          <img src="ovdje logo firme" alt="">
+                        </div>
+                        <div class="description">
+                          <p class="company-name">Mjesto slobodno</p>
+                          <p class="description">Ovdje može biti baš vaša pslovna ponuda</p>
+                        </div>
+                      </div>
+                      <div class="offert-meta">
+                        <p class="location">Lokacija: <span class="city">...</span></p>
+                        <p class="offert-counter">Mjesta: <span class="green"><strong>broj mjesta</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="Više(trenutno opis).html" class="main-btn">Više</a>
+                </div>
+                <div class="offert-wrapper">
+                  <div class="offert">
+                    <div>
+                      <div class="offert-description">
+                        <div class="company-logo">
+                          <img src="ovdje logo" alt="">
+                        </div>
+                        <div class="description">
+                          <p class="company-name">Mjesto slobodno</p>
+                          <p class="description">Ovdje može biti baš vaša poslovna ponuda</p>
+                        </div>
+                      </div>
+                      <div class="offert-meta">
+                        <p class="location">Lokacija: <span class="city"></span></p>
+                        <p class="offert-counter">Mjesta: <span class="green"><strong>broj mjesta</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="Više(trenutno opis).html" class="main-btn">Više</a>
+                </div>
+              </div>  
+            </div>
+          </div>
+		    <h1><span class="green"></span></h1>
+          <!-- Newsletter -->
+          </div>
+          <div class="find-jobs text-center">
+            <h1><span class="green">Find jobs</span> around<br>the world</h1>
+          </div>
+        </div> 
+    </main>
+      <!-- Footer -->
+      <footer>
+          <div class="container text-center text-md-start">
+            <div class="footer-wrap">
+              <div class="about">
+                <img src="img/icon/logotip.png" alt="">
+                <p class="text-muted py-4">
+                </p>
+                <div class="social-media">
+                  <a href="" class="me-2 text-reset"><img src="img/icon/facebook-icon.svg" alt=""></a>
+                  <a href="" class="me-2 text-reset"><img src="img/icon/twitter-icon.svg" alt=""></a>
+                  <a href="" class="me-2 text-reset"><img src="img/icon/linkedin-icon.svg" alt=""></a>
+                  <a href="" class="me-2 text-reset"><img src="img/icon/instagram-icon.svg" alt=""></a>
+                </div>
+              </div>
+              <div class="company">
+                <h6 class="fw-bold">Company</h6>
+                <p><a href="">About us</a></p>
+                <p><a href="">Services</a></p>
+                <p><a href="">Team</a></p>
+                <p><a href="">Pricing</a></p>
+                <p><a href="">Project</a></p>
+                <p><a href="">Careers</a></p>
+                <p><a href="">Blog</a></p>
+                <p><a href="">Login</a></p>
+              </div>
+              <div class="useful-links">
+                <h6 class="fw-bold">Useful links</h6>
+                <p><a href="">Terms of </a></p>
+                <p><a href="">Services</a></p>
+                <p><a href="">Privacy Policy</a></p>
+                <p><a href="">Documentation</a></p>
+                <p><a href="">Changelog</a></p>
+                <p><a href="">Components</a></p>
+              </div>
+
+              </div> 
+            </div>
+            <div class="copyright">
+              <p>&copy; 2023 YOUR-DOMAIN | Created by <a href="" title="Firmbee - Free Project Management System" target="_blank">JobFrame</a></p>
+              <!--
+              This template is licenced under Attribution 3.0 (CC BY 3.0 PL),
+              You are free to: Share and Adapt. You must give appropriate credit, you may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+              --> 
+            </div>
+          </div>
+      </footer>
+    <div class="fb2022-copy">Fbee 2022 copyright</div>
+    <script src="js/nav-bg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
